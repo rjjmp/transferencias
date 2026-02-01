@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de Presentacion</title>
+    <meta name="autor" content="Rosa Julia">
+    <link rel="stylesheet" href="css/estilo.css">
+
+</head>
+<body>
+    <main>
+        <header class="izquierda">
+        <img src="imagenes/Captura.PNG" alt="logo" title="logo">
+         <p class="subtitulo">Estamos a tu servicio!!!</p>
+          <div class="contacto">
+            📞 Contacto: <b>829-847-5514</b>
+        </div>
+         </header>
+         <section class="derecha">
+         <div class="section-title">Para Transferencias</div>
+          
+
+       <div class="bank banreservas" onclick="mostrar(this)">
+    Banreservas
+    <div class="info">
+        Cuenta: <b>9606576798</b><br>
+        Cédula: <b>031-0466633-8</b>
+    </div>
+</div>
+
+<div class="bank popular" onclick="mostrar(this)">
+    Santa Cruz
+    <div class="info">
+        Cuenta: <b>11005000209846</b><br>
+        Cédula: <b>031-0466633-8</b>
+    </div>
+</div>
+
+<div class="bank bhd" onclick="mostrar(this)">
+    BHD
+    <div class="info">
+        Cuenta: <b>38305310019</b><br>
+        Cédula: <b>031-0466633-8</b>
+    </div>
+</div>
+
+
+<script>
+function mostrar(boton) {
+    const infos = document.querySelectorAll('.info');
+
+    infos.forEach(info => {
+        if (info !== boton.querySelector('.info')) {
+            info.style.display = "none";
+        }
+    });
+
+    const infoActual = boton.querySelector('.info');
+
+    infoActual.style.display =
+        infoActual.style.display === "block" ? "none" : "block";
+}
+</script>
+
+
+    </main>
+    
+</body>
+</html>
+

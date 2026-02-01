@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* TARJETA */
+main {
+    display: flex;
+    width: 95%;
+    max-width: 400px; /* 🔹 MÁS ESTRECHA */
+    margin: 25px auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+/* INFO OCULTA */
+.info {
+    display: none;
+    margin-top: 10px;
+    background: rgba(255,255,255,0.2);
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+/* LADO IZQUIERDO */
+.izquierda {
+    width: 45%;
+    background: #79abf0;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.izquierda img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+.subtitulo {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* LADO DERECHO */
+.derecha {
+    width: 55%;
+    padding: 20px 12px;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* BOTONES */
+.bank {
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.bank:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* COLORES */
+.banreservas {
+    background: #254C74;
+}
+
+.popular {
+    background: #091C4B;
+}
+
+.bhd {
+    background: #50BA40;
+}
+
+/* CONTACTO */
+.contacto {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+/* TABLET Y MÓVIL */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        max-width: 360px;
+    }
+
+    .izquierda,
+    .derecha {
+        width: 100%;
+    }
+
+    .izquierda img {
+        width: 140px;
+    }
+}
+
+/* CELULARES PEQUEÑOS */
+@media (max-width: 480px) {
+    main {
+        max-width: 330px;
+    }
+
+    .bank {
+        font-size: 13px;
+        padding: 11px;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
+}
+
+/* MUY PEQUEÑOS */
+@media (max-width: 360px) {
+    main {
+        max-width: 300px;
+    }
+
+    .bank {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
